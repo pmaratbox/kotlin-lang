@@ -5,12 +5,23 @@ Incremental lessons learning Kotlin.
 ## Prerequisites
 
 - Kotlin compiler
-- JDK 17+
+- OpenJDK 26
 
 ### Install
 
-- macOS (Homebrew): `brew install kotlin` (depends on a JDK; `brew install --cask temurin` if you don't have one)
-- Linux / cross-platform (recommended): install [SDKMAN](https://sdkman.io/install), then `sdk install kotlin` and `sdk install java`
+- macOS (Homebrew):
+
+        brew install kotlin openjdk@26
+
+  `openjdk@26` is keg-only. Symlink so the system finds it:
+
+        sudo ln -sfn /opt/homebrew/opt/openjdk@26/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-26.jdk
+
+  And put it on `PATH`:
+
+        echo 'export PATH="/opt/homebrew/opt/openjdk@26/bin:$PATH"' >> ~/.zshrc
+
+- Linux / cross-platform (recommended): install [SDKMAN](https://sdkman.io/install), then `sdk install kotlin` and `sdk install java 26-open`
 
 ### Verify
 
