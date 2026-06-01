@@ -1,0 +1,4 @@
+fun main() {
+    val value = System.getenv("LESSON_ENV_VAR") ?: "default"
+    println("value: $value")
+}
