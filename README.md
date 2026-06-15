@@ -565,6 +565,9 @@ Incremental lessons learning Kotlin.
 - [0475-required-option](30-cli-args/0475-required-option/) — declare an option as required
 - [0476-choice-option](30-cli-args/0476-choice-option/) — restrict an option to a set of choices
 
+### Validation & Schemas
+- [0485-valid-input](32-validation/0485-valid-input/) — a valid object passes validation
+
 ## How to run
 
 Lessons are grouped into topic folders (e.g. `05-strings/0072-palindrome-check/`).
